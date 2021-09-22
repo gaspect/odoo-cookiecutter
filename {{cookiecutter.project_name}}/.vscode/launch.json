@@ -1,0 +1,10 @@
+{
+    "configurations": [
+        {
+            "name": "{{cookiecutter.project_name}}",
+            "type": "python",
+            "request": "launch",
+            "cwd": "${workspaceRoot}/addons",
+        }
+    ]
+}

@@ -1,0 +1,36 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres:13
+    hostname: {{cookiecutter.postgres_host}}
+    environment:
+      - POSTGRES_DB={{cookiecutter.postgres_database}}
+      - POSTGRES_USER={{cookiecutter.postgres_user}}
+      - POSTGRES_PASSWORD={{cookiecutter.postgres_password}}
+    volumes:
+      - data:/var/lib/postgresql/data
+    ports:
+      - {{cookiecutter.postgres_port}}:5432
+
+  odoo:
+    image: odoo:14   
+    hostname: {{cookiecutter.odoo_host}}
+    depends_on:
+      - postgres
+    
+    environment:
+      - HOST={{cookiecutter.postgres_host}}
+      - PORT={{cookiecutter.postgres_port}}
+      - USER={{cookiecutter.postgres_user}}
+      - PASSWORD={{cookiecutter.postgres_password}}
+    volumes:
+      - filestore:/var/lib/odoo
+      - ./config:/etc/odoo
+      - ./addons:/mnt/extra-addons
+    ports:
+      - {{cookiecutter.odoo_port}}:8069
+
+volumes:
+  data:
+  filestore:

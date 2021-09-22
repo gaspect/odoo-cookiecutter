@@ -1,0 +1,14 @@
+{
+    "project_name":"Odoo",
+
+    "postgres_host":"postgres",
+    "postgres_port":"5432",
+    "postgres_database":"postgres",
+    "postgres_user":"odoo",
+    "postgres_password":"odoo",
+
+    "odoo_host":"odoo",
+    "odoo_port":"8096",
+    "odoo_database":"odoo",
+    "odoo_admin_password":"admin"
+}
