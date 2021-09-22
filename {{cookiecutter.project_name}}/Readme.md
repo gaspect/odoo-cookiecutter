@@ -13,7 +13,7 @@
 
 - Whe need docker in swarm mode so run: `docker swarm init`.*This is for newbies only*.
 - Now run `make run`
-- **_Voilá_**. Now visit your (**Odoo site**)['https://127.0.0.1:{{cookiecutter.odoo_port}}']
+- **_Voilá_**. Now visit your [**Odoo site**]('https://127.0.0.1:{{cookiecutter.odoo_port}}').
 
 ### Development mode
 
