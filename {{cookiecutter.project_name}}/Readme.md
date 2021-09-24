@@ -11,7 +11,7 @@
 
 ### Starting docker
 
-- Whe need docker in swarm mode so run: `docker swarm init`.*This is for newbies only*.
+- We'll need docker to be in swarm mode so run: `docker swarm init`.*This is for newbies only*.
 - Now run `make run`
 - **_Voilá_**. Now visit your [**Odoo site**]('https://127.0.0.1:{{cookiecutter.odoo_port}}').
 
@@ -27,12 +27,12 @@ The folder `addons` is ready to hold any future **Odoo module or addon** impleme
 
 ### Useful commands
 
-`make run` : Run the **docker stack**.
+`make run` : Runs the **docker stack**.
 
-`make stop` : Stop the **docker stack**.
+`make stop` : Stops the **docker stack**.
 
-`make rm` : Remove docker volumes associated with this **docker stack**.
+`make rm` : Removes docker volumes associated with this **docker stack**.
 
-`make show` : Show **docker services** status.
+`make show` : Shows **docker services** status.
 
-`make logs` : Show **docker services** logs. 
+`make logs` : Shows **docker services** logs. 
