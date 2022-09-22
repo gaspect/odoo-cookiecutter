@@ -2,7 +2,7 @@ version: '3.8'
 
 services:
   postgres:
-    image: postgres:13
+    image: postgres:latest
     hostname: {{cookiecutter.postgres_host}}
     environment:
       - POSTGRES_DB={{cookiecutter.postgres_database}}
@@ -14,7 +14,7 @@ services:
       - {{cookiecutter.postgres_port}}:5432
 
   odoo:
-    image: odoo:14   
+    image: odoo:latest   
     hostname: {{cookiecutter.odoo_host}}
     depends_on:
       - postgres

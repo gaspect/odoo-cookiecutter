@@ -3,7 +3,7 @@
 ## Requirements
 
 - `python`: >= 3.6
-- `docker`: 19.+
+- `docker`: >= 19
 
 ## Setup
 
@@ -11,28 +11,15 @@
 
 ### Starting docker
 
-- We'll need docker to be in swarm mode so run: `docker swarm init`.*This is for newbies only*.
-- Now run `make run`
+- We'll need docker then run: `docker-compose up -d`.*This is for newbies only*.
 - **_Voilá_**. Now visit your [**Odoo site**]('https://127.0.0.1:{{cookiecutter.odoo_port}}').
 
 ### Development mode
 
 - Create a virtual enviroment: `python -m venv .venv`
 - Set the proper source: `source .venv/bin/activate` *Use the proper activate script for ou OS.*
-- Install vendor package: `pip install ./vendor/odoo-14.0-py3-none-any.whl`
+- Install odoo package: `pip install -r requirements.txt`
 
 **Now we are ready to rush into development mode.**
 
 The folder `addons` is ready to hold any future **Odoo module or addon** implementation.
-
-### Useful commands
-
-`make run` : Runs the **docker stack**.
-
-`make stop` : Stops the **docker stack**.
-
-`make rm` : Removes docker volumes associated with this **docker stack**.
-
-`make show` : Shows **docker services** status.
-
-`make logs` : Shows **docker services** logs. 
