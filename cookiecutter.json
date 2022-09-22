@@ -1,5 +1,5 @@
 {
-    "project_name":"Odoo",
+    "project_name":"odoo",
 
     "postgres_host":"postgres",
     "postgres_port":"5432",

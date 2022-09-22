@@ -1,6 +1,6 @@
 # odoo-cookiecutter
 
-A **cookiecutter** for **blazingly fast deploy and development** of **Odoo(*14*)**.
+A **cookiecutter** for **blazingly fast deploy and development** of **Odoo**.
 
 ## Requirements
 
